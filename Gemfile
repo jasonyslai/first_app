@@ -15,10 +15,10 @@ end
 gem 'sass-rails' , '4.0.1'	#, '~> 4.0.2'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '2.1.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '4.0.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -36,6 +36,13 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', '0.3.20', require: false
 end
+
+group :rpoduction do
+	gem 'pg', '0.17.1'
+	gem 'rails_12factor', '0.0.2'
+end
+
+#gem 'rb-readline', '~> 0.4.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
